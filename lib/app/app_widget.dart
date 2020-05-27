@@ -1,6 +1,7 @@
-import 'package:arquitetura/app/controllers/app_controller.dart';
 import 'package:arquitetura/app/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
+
+import 'app_controller.dart';
 
 class AppWidget extends StatelessWidget {
   // This widget is the root of your application.
