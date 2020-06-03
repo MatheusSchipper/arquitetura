@@ -1,5 +1,6 @@
 import 'package:arquitetura/app/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import 'app_controller.dart';
 
@@ -8,7 +9,8 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<bool>(
-      valueListenable: AppController.instance.themeSwitch,
+      //valueListenable: AppController.instance.themeSwitch,
+      valueListenable: Modular.get<AppController>().themeSwitch,
       builder: (context, isDark, child) {
         return MaterialApp(
           title: 'Flutter Demo',
