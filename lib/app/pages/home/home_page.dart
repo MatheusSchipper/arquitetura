@@ -24,8 +24,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(title: Text('Home Page')),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            controller.getWeather();
+          onPressed: () async {
+            await controller.getWeather();
           },
           child: Icon(Icons.search),
         ),

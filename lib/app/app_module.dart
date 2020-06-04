@@ -17,7 +17,7 @@ class AppModule extends MainModule {
   List<Bind> get binds => [
     Bind((i)=> HomeController(i.get())),
     Bind((i) => ApiadvisorViewModel(i.get())),
-    Bind<IApiAdvisor>((i) => ApiAdvisorRepository(i.get())),
+    Bind<IApiAdvisor>((i) => ApiAdvisorRepository(i.get<IClientHttp>())),
     Bind<IClientHttp>((i) => ClientHttpService()),
     Bind((i) => AppController(i.get()), lazy: false),
     Bind((i) => ChangeThemeViewModel(localStorage: i.get())),

@@ -1,7 +1,6 @@
 import 'package:arquitetura/app/app_module.dart';
 import 'package:arquitetura/app/interfaces/client_http_interface.dart';
 import 'package:arquitetura/app/models/apiadvisor_model.dart';
-import 'package:arquitetura/app/repositories/apiadvisor_repository.dart';
 import 'package:arquitetura/app/viewmodels/apiadvisor_viewmodel.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';

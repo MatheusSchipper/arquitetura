@@ -12,7 +12,7 @@ class HomeController {
 
   ValueNotifier<ApiadvisorModel> get weather => viewModel.apiadvisorModel;
 
-  getWeather() {
-    viewModel.fill();
+  getWeather() async {
+    await viewModel.fill();
   }
 }
