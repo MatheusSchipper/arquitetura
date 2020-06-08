@@ -3,6 +3,8 @@ import 'package:arquitetura/app/app_widget.dart';
 import 'package:arquitetura/app/interfaces/client_http_interface.dart';
 import 'package:arquitetura/app/interfaces/local_storage_interface.dart';
 import 'package:arquitetura/app/pages/home/home_controller.dart';
+import 'package:arquitetura/app/pages/home/home_page.dart';
+import 'package:arquitetura/app/pages/login/login_page.dart';
 import 'package:arquitetura/app/repositories/apiadvisor_repository.dart';
 import 'package:arquitetura/app/repositories/apiadvisor_repository_interface.dart';
 import 'package:arquitetura/app/services/client_http_service.dart';
@@ -28,6 +30,9 @@ class AppModule extends MainModule {
   Widget get bootstrap => AppWidget();
 
   @override
-  List<Router> get routers => null;
+  List<Router> get routers => [
+    Router('/', child: (context, args) => LoginPage(),),
+    Router('/home', child: (context, args)=> HomePage(),),
+  ];
   
 }
