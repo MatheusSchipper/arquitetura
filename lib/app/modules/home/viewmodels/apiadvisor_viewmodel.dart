@@ -1,5 +1,5 @@
-import 'package:arquitetura/app/models/apiadvisor_model.dart';
-import 'package:arquitetura/app/repositories/apiadvisor_repository_interface.dart';
+import 'package:arquitetura/app/modules/home/interfaces/apiadvisor_repository_interface.dart';
+import 'package:arquitetura/app/modules/home/models/apiadvisor_model.dart';
 import 'package:flutter/material.dart';
 
 class ApiadvisorViewModel {

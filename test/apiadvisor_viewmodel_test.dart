@@ -1,7 +1,8 @@
 import 'package:arquitetura/app/app_module.dart';
-import 'package:arquitetura/app/interfaces/client_http_interface.dart';
-import 'package:arquitetura/app/models/apiadvisor_model.dart';
-import 'package:arquitetura/app/viewmodels/apiadvisor_viewmodel.dart';
+import 'package:arquitetura/app/core/interfaces/client_http_interface.dart';
+import 'package:arquitetura/app/modules/home/home_module.dart';
+import 'package:arquitetura/app/modules/home/models/apiadvisor_model.dart';
+import 'package:arquitetura/app/modules/home/viewmodels/apiadvisor_viewmodel.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -46,6 +47,8 @@ main() {
   initModule(AppModule(), changeBinds: [
     Bind<IClientHttp>((i) => ClientHttpMockito()),
   ]);
+
+  initModule(HomeModule());
 
   final mock = Modular.get<IClientHttp>();
   final viewModel = Modular.get<ApiadvisorViewModel>();

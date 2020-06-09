@@ -1,5 +1,5 @@
-import 'package:arquitetura/app/interfaces/local_storage_interface.dart';
-import 'package:arquitetura/app/models/appconfig_model.dart';
+import 'package:arquitetura/app/core/interfaces/local_storage_interface.dart';
+import 'package:arquitetura/app/core/models/appconfig_model.dart';
 
 class ChangeThemeViewModel {
   final ILocalStorage localStorage;

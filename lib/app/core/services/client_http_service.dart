@@ -1,4 +1,4 @@
-import 'package:arquitetura/app/interfaces/client_http_interface.dart';
+import 'package:arquitetura/app/core/interfaces/client_http_interface.dart';
 import 'package:dio/dio.dart';
 
 class ClientHttpService implements IClientHttp {
